@@ -132,9 +132,24 @@ cPanel → *Cron Jobs* → *Add New Cron Job* → Common Settings: **Once Per Mi
 Preparazione (una volta sola):
 1. Con File Manager crea la cartella `keys` in `/home/UTENTE/` (accanto a
    `public_html`, NON dentro).
-2. Carica temporaneamente in `public_html/tools/` i due file
-   `generate_rsa_keys.php` e `create_staff.php` dal repo (i metodi A/B non
-   caricano `tools/`): li cancellerai al punto 4.
+2. Carica temporaneamente in `public_html/tools/` i tre file
+   `db_check.php`, `generate_rsa_keys.php` e `create_staff.php` dal repo
+   (i metodi A/B non caricano `tools/`): li cancellerai al punto 4.
+
+**Il sito mostra "Service Temporarily Unavailable"?** Quella pagina e' la
+connessione MySQL che fallisce (NON la chiave RSA: quella serve solo alle
+licenze). Lancia prima la diagnosi via cron:
+
+```
+/usr/local/bin/php /home/UTENTE/public_html/tools/db_check.php > /home/UTENTE/dbcheck.txt 2>&1
+```
+
+In `dbcheck.txt` (File Manager) trovi il punto esatto che fallisce: `.env`
+trovato o no, i valori DB letti (password mascherata) e l'errore PDO con la
+spiegazione (utente/password errati, nome DB senza prefisso cPanel, schema
+non ancora importato...). Il nome del DB e dell'utente devono contenere il
+prefisso dell'account: con account `r145204gtmc` saranno tipo
+`r145204gtmc_npi` e `r145204gtmc_utentedb`.
 
 **Chiave RSA** — output completo in `cron_out.txt`, chiave pubblica anche in
 `/home/UTENTE/keys/license_public.pem` (aprila con File Manager e copiala nel
@@ -152,8 +167,8 @@ Resta visibile nella lista dei cron: cancella il cron appena eseguito.
 ```
 
 Chiusura (dopo che entrambi sono andati a buon fine, verificando `cron_out.txt`):
-3. **Cancella dalla cartella `public_html/tools/`** i due file caricati (il resto
-   del sito non li usa) e il file `cron_out.txt`.
+3. **Cancella dalla cartella `public_html/tools/`** i tre file caricati (il resto
+   del sito non li usa) e i file `cron_out.txt` / `dbcheck.txt`.
 4. Cancella i due cron one-shot. Resta solo il cron ricorrente del punto 5.
 
 Note:
