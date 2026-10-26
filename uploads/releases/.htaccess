@@ -1,0 +1,20 @@
+# Niente accesso diretto ai pacchetti.
+#
+# PERCHE'. Prima qui c'era solo `Options -Indexes`, che nasconde l'elenco
+# ma non chiude i file: chiunque indovinasse il nome scaricava. E'
+# successo con GTMC-NPI-App.zip, che conteneva per sbaglio un PDF con
+# le credenziali dei dipendenti.
+#
+# I file si prendono da /api/download-release.php, che verifica che la
+# release sia attiva. Quello script usa readfile(): legge dal disco, non
+# passa da Apache, quindi questa regola non lo tocca.
+
+Options -Indexes
+
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>

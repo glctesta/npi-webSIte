@@ -1,0 +1,11 @@
+{
+    "min_version": "1.0.0",
+    "build": "20261026",
+    "release_notes": "GTMC-NPI 1.0.0: first public release. Projects and waves, tasks and dependencies, interactive Gantt, milestone readiness gates G0-G5, versioned documents with SHA-256, budget requests and approvals, quality checklist, multi-level notifications, change management, optional IATF 16949 rule profile.",
+    "version": "1.0.0",
+    "release_date": "2026-10-26",
+    "file_name": "uploads/releases/GTMC-NPI-Setup-v1.0.0.exe",
+    "file_size": "~40 MB",
+    "requirements": "Windows Server 2019+ (IIS) or Linux, Microsoft SQL Server 2019+ (dedicated GTMC_NPI database), Python 3.11+",
+    "update_type": "recommended"
+}

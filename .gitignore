@@ -1,0 +1,25 @@
+.env
+.env.*
+!.env.example
+
+# Secrets: never commit keys
+*.pem
+*.key
+keys/
+
+# Large release binaries (upload via FTP/SCP)
+uploads/releases/*.exe
+uploads/releases/*.zip
+uploads/updates/*.zip
+uploads/payments/*
+!uploads/payments/.htaccess
+
+# Local site export archives
+/*.zip
+
+# Local / OS
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

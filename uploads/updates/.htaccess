@@ -1,0 +1,19 @@
+# Niente accesso diretto agli aggiornamenti.
+#
+# Qui il motivo e' anche commerciale: gli aggiornamenti sono il servizio
+# che il cliente paga, e /api/download-update.php li consegna solo a chi
+# ha una licenza valida del piano giusto. Lasciare la cartella aperta
+# vorrebbe dire aggirare quel controllo conoscendo un nome di file.
+#
+# download-update.php usa readfile(): legge dal disco, non passa da
+# Apache, quindi questa regola non lo tocca.
+
+Options -Indexes
+
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>

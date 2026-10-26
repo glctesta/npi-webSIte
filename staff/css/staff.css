@@ -1,0 +1,276 @@
+/* Staff Portal specific styles */
+
+.staff-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.staff-sidebar {
+    width: 250px;
+    background: var(--bg-darker);
+    border-right: 1px solid var(--border-glass);
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition);
+    flex-shrink: 0;
+    z-index: 100;
+}
+
+.staff-sidebar.collapsed {
+    width: 0;
+    overflow: hidden;
+}
+
+.sidebar-brand {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--border-glass);
+}
+
+.sidebar-nav {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sidebar-nav a {
+    padding: 0.75rem 1.5rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-nav a:hover, .sidebar-nav a.active {
+    color: var(--text-main);
+    background: var(--bg-glass);
+    border-left-color: var(--accent-primary);
+}
+
+/* Main Content Wrapper */
+.staff-main-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+/* Topbar */
+.staff-topbar {
+    height: 70px;
+    background: rgba(7, 7, 20, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-glass);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.topbar-left, .topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sidebar-toggle {
+    background: none;
+    border: none;
+    color: var(--text-main);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.staff-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.staff-name {
+    font-weight: 600;
+}
+
+/* Badges */
+.badge {
+    padding: 0.25em 0.6em;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.badge-role { background: rgba(99, 102, 241, 0.2); color: #a5b4fc; }
+.badge-success { background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid #10b981; }
+.badge-danger { background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid #ef4444; }
+.badge-warning { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid #f59e0b; }
+.badge-info { background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid #3b82f6; }
+.badge-secondary { background: rgba(148, 163, 184, 0.2); color: #cbd5e1; border: 1px solid #94a3b8; }
+.badge-primary { background: rgba(99, 102, 241, 0.2); color: #a5b4fc; border: 1px solid #6366f1; }
+
+/* Content Area */
+.staff-content {
+    padding: 2rem;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.welcome-banner {
+    margin-bottom: 2rem;
+}
+.welcome-banner h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+.welcome-banner p {
+    color: var(--text-muted);
+}
+
+/* Alerts */
+.staff-alert {
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.staff-alert-warning { background: rgba(245, 158, 11, 0.1); border-left: 4px solid #f59e0b; }
+.staff-alert-danger { background: rgba(239, 68, 68, 0.1); border-left: 4px solid #ef4444; }
+.staff-alert a { text-decoration: underline; font-weight: bold; margin-left: auto; }
+
+/* Dashboard Grids */
+.staff-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.staff-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Stat Cards */
+.stat-card {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+.stat-info { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+.stat-warning { background: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+.stat-danger { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+.stat-success { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+
+.stat-details {
+    display: flex;
+    flex-direction: column;
+}
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--font-display);
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+.stat-label {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* Tables */
+.table-card {
+    padding: 0;
+    overflow: hidden;
+}
+.card-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-glass);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-header h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+.table-responsive {
+    overflow-x: auto;
+}
+.staff-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.staff-table th, .staff-table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-glass);
+}
+.staff-table th {
+    background: rgba(0, 0, 0, 0.2);
+    color: var(--text-muted);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+.staff-table tbody tr:last-child td {
+    border-bottom: none;
+}
+.staff-table tbody tr:hover {
+    background: var(--bg-glass-hover);
+}
+.text-center { text-align: center; }
+.text-muted { color: var(--text-muted); }
+.text-warning { color: var(--warning); }
+.text-danger { color: var(--error); }
+.text-success { color: var(--success); }
+
+/* Buttons inside staff */
+.btn-sm {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+}
+
+/* Flash Container Override */
+.staff-flash-container {
+    padding: 1rem 2rem 0;
+}
+.staff-flash-container .flash-message {
+    position: static;
+    margin-bottom: 1rem;
+    animation: none;
+}
+
+@media (max-width: 992px) {
+    .staff-sidebar {
+        position: absolute;
+        height: 100%;
+        left: -250px;
+    }
+    .staff-sidebar.open {
+        left: 0;
+    }
+}

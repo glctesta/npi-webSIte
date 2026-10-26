@@ -1,0 +1,58 @@
+# GTMC-NPI — gtmc-npi.eu (Apache 2.4 / LiteSpeed)
+RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Block internal folders and sensitive files BEFORE any other rule
+RewriteRule ^(includes|i18n|sql|tools|tests|cron|keys|\.git)(/|$) - [F,L]
+RewriteRule (^|/)\.(?!well-known/) - [F,L]
+RewriteRule \.(pem|key|sql|md|log|sh|bak|ini|lock|dist)$ - [F,L,NC]
+RewriteRule ^(composer\.(json|lock)|version\.json\.bak)$ - [F,L]
+
+# Don't rewrite real files and directories
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Blog article URLs: /blog/slug -> blog/post.php?slug=slug
+RewriteRule ^blog/([a-z0-9\-]+)$ blog/post.php?slug=$1 [L,QSA]
+
+# Remove .php extension for clean URLs
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+# Security
+Options -Indexes
+ServerSignature Off
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" "expr=%{HTTPS} == 'on'"
+</IfModule>
+
+# Defence in depth (also covered by the rewrite rules above)
+<FilesMatch "\.(env|pem|key|sql|md|log|ini|bak)$">
+    Require all denied
+</FilesMatch>
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Protect includes and i18n from direct access
+<FilesMatch "\.(php|json)$">
+    <If "%{REQUEST_URI} =~ m#^/(includes|i18n|tools|tests|cron|sql)/#">
+        Require all denied
+    </If>
+</FilesMatch>
+
+# Prevent PHP execution in uploads
+<If "%{REQUEST_URI} =~ m#^/uploads/#">
+    <FilesMatch "\.(php|phtml|phar|php\d)$">
+        Require all denied
+    </FilesMatch>
+</If>

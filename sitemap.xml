@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://gtmc-npi.eu/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/?lang=es" />
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/features</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/features?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/features?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/features?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/features?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/features?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/features?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/pricing</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/pricing?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/pricing?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/pricing?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/pricing?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/pricing?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/pricing?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/demo</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/demo?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/demo?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/demo?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/demo?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/demo?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/demo?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/about</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/about?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/about?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/about?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/about?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/about?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/about?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/benefits</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/benefits?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/benefits?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/benefits?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/benefits?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/benefits?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/benefits?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/requirements</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/requirements?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/requirements?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/requirements?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/requirements?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/requirements?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/requirements?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/security</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/security?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/security?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/security?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/security?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/security?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/security?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/blog</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/blog?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/blog?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/blog?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/blog?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/blog?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/blog?lang=es" />
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/privacy-policy</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/privacy-policy?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/privacy-policy?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/privacy-policy?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/privacy-policy?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/privacy-policy?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/privacy-policy?lang=es" />
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/cookie-policy</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/cookie-policy?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/cookie-policy?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/cookie-policy?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/cookie-policy?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/cookie-policy?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/cookie-policy?lang=es" />
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/terms-of-use</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/terms-of-use?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/terms-of-use?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/terms-of-use?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/terms-of-use?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/terms-of-use?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/terms-of-use?lang=es" />
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/projects</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/projects?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/projects?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/projects?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/projects?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/projects?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/projects?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/tasks</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/tasks?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/tasks?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/tasks?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/tasks?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/tasks?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/tasks?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/gantt</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/gantt?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/gantt?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/gantt?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/gantt?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/gantt?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/gantt?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/readiness</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/readiness?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/readiness?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/readiness?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/readiness?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/readiness?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/readiness?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/documents</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/documents?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/documents?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/documents?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/documents?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/documents?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/documents?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/budget</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/budget?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/budget?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/budget?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/budget?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/budget?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/budget?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/checklist</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/checklist?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/checklist?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/checklist?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/checklist?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/checklist?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/checklist?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/notifications</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/notifications?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/notifications?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/notifications?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/notifications?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/notifications?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/notifications?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/change</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/change?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/change?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/change?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/change?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/change?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/change?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/iatf</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/iatf?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/iatf?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/iatf?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/iatf?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/iatf?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/iatf?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/capacity</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/capacity?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/capacity?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/capacity?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/capacity?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/capacity?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/capacity?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gtmc-npi.eu/dashboards</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://gtmc-npi.eu/dashboards?lang=en" />
+        <xhtml:link rel="alternate" hreflang="it" href="https://gtmc-npi.eu/dashboards?lang=it" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://gtmc-npi.eu/dashboards?lang=de" />
+        <xhtml:link rel="alternate" hreflang="ro" href="https://gtmc-npi.eu/dashboards?lang=ro" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://gtmc-npi.eu/dashboards?lang=fr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://gtmc-npi.eu/dashboards?lang=es" />
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
