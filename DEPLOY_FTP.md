@@ -29,13 +29,19 @@ Il file `.htaccess` **va caricato** (è il file che protegge `includes/ i18n/ sq
 
 ## Metodo A — zip + estrazione (consigliato)
 
-1. **Crea lo zip locale** (Git Bash, dalla cartella del repo):
-   ```bash
-   cd /c/Users/User/PythonProjetcs/Python/NPI-Website-PHP
-   zip -r ../gtmc-npi-site.zip . -x ".git/*" "tests/*" "tools/*" "sql/*" "*.md" \
-       ".gitignore" ".gitkeep" "*.pem" "*.key" ".env*"
+1. **Crea lo zip locale** con il `tar.exe` di Windows (preinstallato in Windows 10/11,
+   crea zip veri con `-a`). Da **PowerShell**, dentro la cartella del repo (uso il
+   percorso completo per non rischiare il `tar` GNU di Git Bash, che non fa zip):
+   ```powershell
+   cd C:\Users\User\PythonProjetcs\Python\NPI-Website-PHP
+   C:\Windows\System32\tar.exe -a -c -f ..\gtmc-npi-site.zip --exclude=.git --exclude=tests --exclude=tools `
+       --exclude=sql --exclude='*.md' --exclude=.gitignore --exclude=.gitkeep `
+       --exclude='*.pem' --exclude='*.key' --exclude='.env*' .
    ```
    Ottieni `C:\Users\User\PythonProjetcs\Python\gtmc-npi-site.zip`.
+   (Nota: il comando `zip` dei sistemi Unix non esiste su Windows. Se preferisci
+   un .tar.gz invece dello zip, da Git Bash basta `tar -czf`: cPanel lo estrae
+   allo stesso modo.)
 
 2. **Carica via cPanel File Manager**: login cPanel → *File Manager* → apri `public_html`
    → *Upload* → seleziona lo zip (oppure trascinalo).
