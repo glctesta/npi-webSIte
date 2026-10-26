@@ -7,6 +7,11 @@
  *
  * The password is asked interactively (never passed on the command line,
  * so it does not end up in the shell history) and stored with password_hash().
+ *
+ * Non-interactive mode for one-shot cron jobs (hosts without SSH/Terminal):
+ *   php tools/create_staff.php email@gtmc-npi.eu "Full Name" admin "Min12CharsPass"
+ * The 4th argument is the password: it stays visible in the cron job list,
+ * so DELETE the cron job right after the first run (see DEPLOY_FTP.md).
  */
 if (PHP_SAPI !== 'cli') {
     http_response_code(404);
@@ -31,13 +36,19 @@ function ask_hidden($prompt) {
     return $v;
 }
 
-$pass = ask_hidden('Password (min 12 chars): ');
+if (isset($argv[4]) && $argv[4] !== '') {
+    // Non-interactive mode (cron): password from the 4th argument
+    $pass = $argv[4];
+    fwrite(STDERR, "Note: password passed on the command line - delete the cron job after this run.\n");
+} else {
+    $pass = ask_hidden('Password (min 12 chars): ');
+    if (ask_hidden('Repeat password: ') !== $pass) {
+        fwrite(STDERR, "Passwords do not match.\n");
+        exit(1);
+    }
+}
 if (strlen($pass) < 12) {
     fwrite(STDERR, "Password too short.\n");
-    exit(1);
-}
-if (ask_hidden('Repeat password: ') !== $pass) {
-    fwrite(STDERR, "Passwords do not match.\n");
     exit(1);
 }
 

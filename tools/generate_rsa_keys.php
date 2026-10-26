@@ -84,7 +84,20 @@ if (file_put_contents($path, $private_pem) === false) {
 @chmod($path, 0600);
 $public_pem = openssl_pkey_get_details($res)['key'];
 
+// Also write the PUBLIC key to a file: essential when the tool runs from a
+// cron job (no SSH/Terminal), where stdout is not visible. This file is not
+// a secret and can be read from cPanel File Manager.
+$public_path = preg_replace('/\.pem$/', '', $path);
+$public_path = preg_replace('/_private$/', '', $public_path) . '_public.pem';
+if (@file_put_contents($public_path, $public_pem) !== false) {
+    @chmod($public_path, 0644);
+    $public_note = "Public key also written to: $public_path\n";
+} else {
+    $public_note = "Could not write $public_path - take the public key from the output below.\n";
+}
+
 echo "Private key written to: $path  (keep it secret, chmod 600)\n";
+echo $public_note;
 echo "Set in .env:  LICENSE_RSA_PRIVATE_KEY_PATH=$path\n\n";
-echo "Public key (paste into app/services/license_pubkey.py -> PUBLIC_KEY_PEM):\n\n";
+echo "Public key (configure it in the GTMC-NPI backend license verification):\n\n";
 echo $public_pem;

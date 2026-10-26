@@ -68,6 +68,8 @@ php tools/create_staff.php info@gtmc-npi.eu "Admin Name" admin   # prompts for t
 
 Staff portal: `https://gtmc-npi.eu/staff/`. The roles are `admin`, `manager` and `sales` — identical logic to the Angajati staff portal.
 
+**No SSH/Terminal on your host?** Run the CLI tools as one-shot cron jobs (cPanel → Cron Jobs, "Once Per Minute", delete the cron after it runs): see **DEPLOY_FTP.md §5-bis**. The RSA tool also writes the public key to `/home/USER/keys/license_public.pem` so you can read it from File Manager.
+
 Cron (cPanel → Cron Jobs): license expiry reminders at 30, 15 and 7 days:
 
 ```

@@ -122,6 +122,48 @@ La procedura completa è in **DEPLOY.md** (§3–§8); qui il sintetico:
 6. **Permessi**: `uploads/releases`, `uploads/updates`, `uploads/tickets`, `uploads/payments`
    scrivibili (755 basta con PHP come stesso utente).
 
+### 5-bis. Niente SSH/Terminal? Esegui i comandi con un cron "usa e getta"
+
+Se il tuo cPanel non ha Terminal/SSH, i comandi CLI si eseguono con **Cron Jobs**:
+cPanel → *Cron Jobs* → *Add New Cron Job* → Common Settings: **Once Per Minute**
+→ incolla il comando → salva. Dopo 1–2 minuti controlla il file di output e
+**cancella il cron** (i cron one-shot non vanno lasciati attivi).
+
+Preparazione (una volta sola):
+1. Con File Manager crea la cartella `keys` in `/home/UTENTE/` (accanto a
+   `public_html`, NON dentro).
+2. Carica temporaneamente in `public_html/tools/` i due file
+   `generate_rsa_keys.php` e `create_staff.php` dal repo (i metodi A/B non
+   caricano `tools/`): li cancellerai al punto 4.
+
+**Chiave RSA** — output completo in `cron_out.txt`, chiave pubblica anche in
+`/home/UTENTE/keys/license_public.pem` (aprila con File Manager e copiala nel
+backend GTMC-NPI):
+
+```
+/usr/local/bin/php /home/UTENTE/public_html/tools/generate_rsa_keys.php /home/UTENTE/keys/license_private.pem > /home/UTENTE/cron_out.txt 2>&1
+```
+
+**Primo utente staff** — la password va come 4° argomento (min 12 caratteri).
+Resta visibile nella lista dei cron: cancella il cron appena eseguito.
+
+```
+/usr/local/bin/php /home/UTENTE/public_html/tools/create_staff.php info@gtmc-npi.eu "Nome Cognome" admin "LaTuaPassword123" > /home/UTENTE/cron_out.txt 2>&1
+```
+
+Chiusura (dopo che entrambi sono andati a buon fine, verificando `cron_out.txt`):
+3. **Cancella dalla cartella `public_html/tools/`** i due file caricati (il resto
+   del sito non li usa) e il file `cron_out.txt`.
+4. Cancella i due cron one-shot. Resta solo il cron ricorrente del punto 5.
+
+Note:
+- Se `/usr/local/bin/php` non esiste prova `/usr/bin/php` oppure, su hosting
+  cPanel MultiPHP, `/opt/cpanel/ea-php81/root/usr/bin/php` (versione adeguata).
+- Se in `cron_out.txt` leggi `The PHP openssl extension is required`, il PHP CLI
+  non ha openssl: usa il percorso per-versione MultiPHP di cui sopra.
+- Il messaggio `GTMC-NPI DB connection failed` in `cron_out.txt` (per
+  create_staff) indica .env/DB non ancora pronti: completa prima i passi 1–2.
+
 ## 6. Verifiche post-caricamento
 
 - `https://gtmc-npi.eu/` apre in tutte le 6 lingue (`?lang=ro`, `?lang=it`, …).
